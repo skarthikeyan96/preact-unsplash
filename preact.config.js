@@ -18,10 +18,6 @@ export default (config, env, helpers, params = defaultParams) => {
     // Add tailwind css at the top.
     plugins.unshift(require('tailwindcss'));
 
-    // Add PurgeCSS only in production.
-    if (env.production) {
-      plugins.push(purgecss);
-    }
   });
   return config;
 };
