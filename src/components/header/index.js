@@ -1,9 +1,8 @@
 import { h } from 'preact';
-import style from './style.css';
 
 const Header = () => (
-	<header class={style.header}>
-		<h1>Preact App</h1>
+	<header className="font-mono text-center p-4 bg-grey-500 border-b-3 border-red  text-lg bg-gray-500 shadow-lg text-white">
+		<h1 className="capitalize">Preact Unsplash Library</h1>
 	</header>
 );
 
